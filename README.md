@@ -14,7 +14,7 @@ Contains scripts and configuration settings for Ravi's local server.
 
 - Depends on docker-compose.yml directly in the git submodule for actual-server
     - Make sure to run `git submodule init` and `git submodule update`
-    - Make sure to comment on `environment:` in the `docker-compose.yml` file in the submodule
+    - Make sure to comment out `environment:` in the `docker-compose.yml` file in the submodule
 - Sets up HTTPS by generating a self-signed certificate in the appropriate directory
 
 You're all set!
