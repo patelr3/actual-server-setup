@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
-
 DATA_DIR=$(realpath ./actual-data)
 mkdir -p $DATA_DIR
 
-# Need to setup self-signed certs first
+# Need to setup self-signed certs first to configure https
+# (This allows any computer on the network to connect to host)
 # https://actualbudget.org/docs/config/https/
 CONTAINER_CERT_DIR=/data/cert-files
 CERT_DIR=$DATA_DIR/cert-files
